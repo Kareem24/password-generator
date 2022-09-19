@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    text-align: center;
+    margin: 100px auto;
+    border: 2px solid green;
+    max-width: 300px;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap :20px;
+}
+strong{
+    color: #1f2f98;
+    background:#4adede;
+    padding: 2px
+}
+button{
+   background: linear-gradient(to right,green,greenYellow);
+   padding: 10px;
+   border: none;
+   outline: 1px solid green;
+   outline-offset: 5px;
+   margin-top: 60px;
+   animation:bounce  infinite linear 2s ;
+   cursor: pointer;
+}
+@keyframes bounce {
+    0%{
+        transform: scale(0.9);
+    }
+    50%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(0.9);
+    }
+}
